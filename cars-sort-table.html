@@ -105,17 +105,6 @@ function sortTable(n) {
           break;
         }
       } else if (dir == "desc") {
-        var value1 = x.innerHTML;
-        var value2 = y.innerHTML;
-
-        //CHECK IF VALUES ARE NUMERIC. (LINK LATER)
-
-        if (isNumeric(value1) && isNumeric(value2)){
-            if(Number(value1) < Number(value2)){
-                shouldSwitch = true;
-                break;
-            }
-        } else {
         if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
           //if so, mark as a switch and break the loop:
           shouldSwitch = true;
